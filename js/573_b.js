@@ -13,10 +13,10 @@ var keyHandler = function(event){
 		var stylecheck = mystyle.href.endsWith("alxdr1.css");
 		var congrats = document.getElementById("konamicongrats");
 		if (stylecheck == true) {
-			mystyle.setAttribute("href", "../alxdr2.css");
+			mystyle.setAttribute("href", "../style/alxdr2.css");
 			congrats.setAttribute("style", "display: block");
 		} else {
-			mystyle.setAttribute("href", "../alxdr1.css");
+			mystyle.setAttribute("href", "../style/alxdr1.css");
 			congrats.setAttribute("style", "display: none");
 		}
 	}
