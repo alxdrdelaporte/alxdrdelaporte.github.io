@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<head>
+    <title>Démo : Carte langues hmong-mien (points)</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3e002c0728545d9af197f3e8e3e06e1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f3e002c0728545d9af197f3e8e3e06e1" ></div>
+        
+</body>
+<script>    
+    
+            var map_f3e002c0728545d9af197f3e8e3e06e1 = L.map(
+                "map_f3e002c0728545d9af197f3e8e3e06e1",
+                {
+                    center: [25.6618, 108.533],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_274267d692e7475c8eb7b8577c26222d = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f3e002c0728545d9af197f3e8e3e06e1);
+        
+    
+            var feature_group_9a64ceb2ff82478685a7db61ae05f137 = L.featureGroup(
+                {}
+            ).addTo(map_f3e002c0728545d9af197f3e8e3e06e1);
+        
+    
+            var circle_marker_698cff11bd004bffb958b4bd50588bf5 = L.circleMarker(
+                [25.7638, 110.474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_6a956f82ade4474482b15528fbabdf72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_279f07f8ca214b7696da745fc7ac1c7b = $(`<div id="html_279f07f8ca214b7696da745fc7ac1c7b" style="width: 100.0%; height: 100.0%;">Younuo Bunu (<a href="https://glottolog.org/resource/languoid/id/youn1235">youn1235</a>)</div>`)[0];
+            popup_6a956f82ade4474482b15528fbabdf72.setContent(html_279f07f8ca214b7696da745fc7ac1c7b);
+        
+
+        circle_marker_698cff11bd004bffb958b4bd50588bf5.bindPopup(popup_6a956f82ade4474482b15528fbabdf72)
+        ;
+
+        
+    
+    
+            var circle_marker_3931470bf62b4337a1ee525f98f17e8f = L.circleMarker(
+                [22.8049, 105.165],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_1cd510df26954edfac45a2e4a52f89ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ae9c77710b54274968dda1925baf537 = $(`<div id="html_0ae9c77710b54274968dda1925baf537" style="width: 100.0%; height: 100.0%;">Pa-Hng (<a href="https://glottolog.org/resource/languoid/id/pahn1237">pahn1237</a>)</div>`)[0];
+            popup_1cd510df26954edfac45a2e4a52f89ae.setContent(html_0ae9c77710b54274968dda1925baf537);
+        
+
+        circle_marker_3931470bf62b4337a1ee525f98f17e8f.bindPopup(popup_1cd510df26954edfac45a2e4a52f89ae)
+        ;
+
+        
+    
+    
+            var circle_marker_bab28848a86e4745a7c66657c5069b2a = L.circleMarker(
+                [27.9649, 110.473],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_ed044a2086444b6996b9f0bd617f5db5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_276a2264c6b74803b8a692d14ab0c565 = $(`<div id="html_276a2264c6b74803b8a692d14ab0c565" style="width: 100.0%; height: 100.0%;">Wunai Bunu (<a href="https://glottolog.org/resource/languoid/id/wuna1248">wuna1248</a>)</div>`)[0];
+            popup_ed044a2086444b6996b9f0bd617f5db5.setContent(html_276a2264c6b74803b8a692d14ab0c565);
+        
+
+        circle_marker_bab28848a86e4745a7c66657c5069b2a.bindPopup(popup_ed044a2086444b6996b9f0bd617f5db5)
+        ;
+
+        
+    
+    
+            var circle_marker_842aac4423b84f638a2bbf8faa00b27f = L.circleMarker(
+                [23.8692, 110.007],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_061c6ca040e74f1084ea552b418bbe63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de499a6f6c884a7fa816f766765dbefb = $(`<div id="html_de499a6f6c884a7fa816f766765dbefb" style="width: 100.0%; height: 100.0%;">Jiongnai Bunu (<a href="https://glottolog.org/resource/languoid/id/jion1236">jion1236</a>)</div>`)[0];
+            popup_061c6ca040e74f1084ea552b418bbe63.setContent(html_de499a6f6c884a7fa816f766765dbefb);
+        
+
+        circle_marker_842aac4423b84f638a2bbf8faa00b27f.bindPopup(popup_061c6ca040e74f1084ea552b418bbe63)
+        ;
+
+        
+    
+    
+            var circle_marker_28523b136872419f8e54bffbd7ced10d = L.circleMarker(
+                [24.1025, 107.711],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_0ebdc76a09e3435fae2fad7e22c3858a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62944531d6544442923a990e0201d5e8 = $(`<div id="html_62944531d6544442923a990e0201d5e8" style="width: 100.0%; height: 100.0%;">Bu-Nao Bunu (<a href="https://glottolog.org/resource/languoid/id/buna1273">buna1273</a>)</div>`)[0];
+            popup_0ebdc76a09e3435fae2fad7e22c3858a.setContent(html_62944531d6544442923a990e0201d5e8);
+        
+
+        circle_marker_28523b136872419f8e54bffbd7ced10d.bindPopup(popup_0ebdc76a09e3435fae2fad7e22c3858a)
+        ;
+
+        
+    
+    
+            var circle_marker_f59ae365a947466987b0740c52d91954 = L.circleMarker(
+                [26.6338, 108.162],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_c20b426b5f2b4c68aa9fa164dbc6d5fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_704991508f0d4b01a9ea13783ccdcf9f = $(`<div id="html_704991508f0d4b01a9ea13783ccdcf9f" style="width: 100.0%; height: 100.0%;">Northern Qiandong Miao (<a href="https://glottolog.org/resource/languoid/id/nort2747">nort2747</a>)</div>`)[0];
+            popup_c20b426b5f2b4c68aa9fa164dbc6d5fe.setContent(html_704991508f0d4b01a9ea13783ccdcf9f);
+        
+
+        circle_marker_f59ae365a947466987b0740c52d91954.bindPopup(popup_c20b426b5f2b4c68aa9fa164dbc6d5fe)
+        ;
+
+        
+    
+    
+            var circle_marker_baabeb3c152f481caba12c53715522a0 = L.circleMarker(
+                [25.6618, 108.533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_582b4b6899854a79bf06057d902b2317 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8796f3cf350f4c54b090f1f610951313 = $(`<div id="html_8796f3cf350f4c54b090f1f610951313" style="width: 100.0%; height: 100.0%;">Southern Qiandong Miao (<a href="https://glottolog.org/resource/languoid/id/sout2754">sout2754</a>)</div>`)[0];
+            popup_582b4b6899854a79bf06057d902b2317.setContent(html_8796f3cf350f4c54b090f1f610951313);
+        
+
+        circle_marker_baabeb3c152f481caba12c53715522a0.bindPopup(popup_582b4b6899854a79bf06057d902b2317)
+        ;
+
+        
+    
+    
+            var circle_marker_50753d8f9302484e90f629ee17ff9bca = L.circleMarker(
+                [26.4966, 109.046],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_d78e2aa4997b49018c38c85f423a006e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c6629931811491083497c610d2abb5b = $(`<div id="html_2c6629931811491083497c610d2abb5b" style="width: 100.0%; height: 100.0%;">Eastern Qiandong Miao (<a href="https://glottolog.org/resource/languoid/id/east2370">east2370</a>)</div>`)[0];
+            popup_d78e2aa4997b49018c38c85f423a006e.setContent(html_2c6629931811491083497c610d2abb5b);
+        
+
+        circle_marker_50753d8f9302484e90f629ee17ff9bca.bindPopup(popup_d78e2aa4997b49018c38c85f423a006e)
+        ;
+
+        
+    
+    
+            var circle_marker_4ce59f8b1aca497b908fef73b1a4e128 = L.circleMarker(
+                [28.33, 109.67],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_445a2777694042c3861ca0afa1df660a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fbf8801fdbe4cf28ff0354fb4ed6f51 = $(`<div id="html_0fbf8801fdbe4cf28ff0354fb4ed6f51" style="width: 100.0%; height: 100.0%;">Western Xiangxi Miao (<a href="https://glottolog.org/resource/languoid/id/west2430">west2430</a>)</div>`)[0];
+            popup_445a2777694042c3861ca0afa1df660a.setContent(html_0fbf8801fdbe4cf28ff0354fb4ed6f51);
+        
+
+        circle_marker_4ce59f8b1aca497b908fef73b1a4e128.bindPopup(popup_445a2777694042c3861ca0afa1df660a)
+        ;
+
+        
+    
+    
+            var circle_marker_247929a3c9864ed18a42ce76dd36c01d = L.circleMarker(
+                [28.7318, 109.756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_27c7582b514c4f7fb20ffd6ae3cbeec2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_298b59e695ff4c06a0026ff64e14950f = $(`<div id="html_298b59e695ff4c06a0026ff64e14950f" style="width: 100.0%; height: 100.0%;">Eastern Xiangxi Miao (<a href="https://glottolog.org/resource/languoid/id/east2371">east2371</a>)</div>`)[0];
+            popup_27c7582b514c4f7fb20ffd6ae3cbeec2.setContent(html_298b59e695ff4c06a0026ff64e14950f);
+        
+
+        circle_marker_247929a3c9864ed18a42ce76dd36c01d.bindPopup(popup_27c7582b514c4f7fb20ffd6ae3cbeec2)
+        ;
+
+        
+    
+    
+            var circle_marker_6756d8f4e49741248458ab9e94d7c224 = L.circleMarker(
+                [23.0399, 114.814],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_9e2884ae904a4a02b183188e3d9319d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d59dc219b3d8487885fd76f7619a37bc = $(`<div id="html_d59dc219b3d8487885fd76f7619a37bc" style="width: 100.0%; height: 100.0%;">She (<a href="https://glottolog.org/resource/languoid/id/shee1238">shee1238</a>)</div>`)[0];
+            popup_9e2884ae904a4a02b183188e3d9319d9.setContent(html_d59dc219b3d8487885fd76f7619a37bc);
+        
+
+        circle_marker_6756d8f4e49741248458ab9e94d7c224.bindPopup(popup_9e2884ae904a4a02b183188e3d9319d9)
+        ;
+
+        
+    
+    
+            var circle_marker_30211d77eb29449d8432352a5c349988 = L.circleMarker(
+                [26.263819, 110.096687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_d09c274804b84b19b6cfa12b333c65a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b06af8e5ab734a4d93f76255a0b75335 = $(`<div id="html_b06af8e5ab734a4d93f76255a0b75335" style="width: 100.0%; height: 100.0%;">Pa Na (<a href="https://glottolog.org/resource/languoid/id/pana1310">pana1310</a>)</div>`)[0];
+            popup_d09c274804b84b19b6cfa12b333c65a7.setContent(html_b06af8e5ab734a4d93f76255a0b75335);
+        
+
+        circle_marker_30211d77eb29449d8432352a5c349988.bindPopup(popup_d09c274804b84b19b6cfa12b333c65a7)
+        ;
+
+        
+    
+    
+            var circle_marker_d3f53b6ec15d493692decf4cb43cafd3 = L.circleMarker(
+                [26.8183, 107.158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_b9ad875cd6ee472781bbe4d052dccf9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ffb84cf247c4f059ec20c1d89b26822 = $(`<div id="html_5ffb84cf247c4f059ec20c1d89b26822" style="width: 100.0%; height: 100.0%;">Luopohe Hmong (<a href="https://glottolog.org/resource/languoid/id/luop1235">luop1235</a>)</div>`)[0];
+            popup_b9ad875cd6ee472781bbe4d052dccf9d.setContent(html_5ffb84cf247c4f059ec20c1d89b26822);
+        
+
+        circle_marker_d3f53b6ec15d493692decf4cb43cafd3.bindPopup(popup_b9ad875cd6ee472781bbe4d052dccf9d)
+        ;
+
+        
+    
+    
+            var circle_marker_efd0db11437a47c6a234ffc58b8987c7 = L.circleMarker(
+                [26.71691, 106.638336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_83f9bdf226ee44b9abbbca19b55ba03f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bee2e03be9b4d3b99b1aaf4ba430d7a = $(`<div id="html_0bee2e03be9b4d3b99b1aaf4ba430d7a" style="width: 100.0%; height: 100.0%;">Guiyang (<a href="https://glottolog.org/resource/languoid/id/guiy1235">guiy1235</a>)</div>`)[0];
+            popup_83f9bdf226ee44b9abbbca19b55ba03f.setContent(html_0bee2e03be9b4d3b99b1aaf4ba430d7a);
+        
+
+        circle_marker_efd0db11437a47c6a234ffc58b8987c7.bindPopup(popup_83f9bdf226ee44b9abbbca19b55ba03f)
+        ;
+
+        
+    
+    
+            var circle_marker_94fc7480d93541eb863c93af3e6b73e0 = L.circleMarker(
+                [26.8542, 107.823],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_a92a81f6788b478e801d446e3272f317 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_807733e0fa3e4b16960199ee8161142f = $(`<div id="html_807733e0fa3e4b16960199ee8161142f" style="width: 100.0%; height: 100.0%;">Ge (<a href="https://glottolog.org/resource/languoid/id/geee1239">geee1239</a>)</div>`)[0];
+            popup_a92a81f6788b478e801d446e3272f317.setContent(html_807733e0fa3e4b16960199ee8161142f);
+        
+
+        circle_marker_94fc7480d93541eb863c93af3e6b73e0.bindPopup(popup_a92a81f6788b478e801d446e3272f317)
+        ;
+
+        
+    
+    
+            var circle_marker_46045b18c6e24c3fab92baaa3522241d = L.circleMarker(
+                [27.8682, 104.06],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_2651daef0ae24caf94e44de80c134195 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be71549c29c04f128e0feacef62f117a = $(`<div id="html_be71549c29c04f128e0feacef62f117a" style="width: 100.0%; height: 100.0%;">Diandongbei-Large Flowery Miao (<a href="https://glottolog.org/resource/languoid/id/larg1235">larg1235</a>)</div>`)[0];
+            popup_2651daef0ae24caf94e44de80c134195.setContent(html_be71549c29c04f128e0feacef62f117a);
+        
+
+        circle_marker_46045b18c6e24c3fab92baaa3522241d.bindPopup(popup_2651daef0ae24caf94e44de80c134195)
+        ;
+
+        
+    
+    
+            var circle_marker_15886becf01f4ac0828e185dabbd2483 = L.circleMarker(
+                [26.55, 105.1],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_12cb65dccb044c66a3711f273a5b4391 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dc93fafeed343368f95a3070ac557d7 = $(`<div id="html_6dc93fafeed343368f95a3070ac557d7" style="width: 100.0%; height: 100.0%;">Gha-mu (<a href="https://glottolog.org/resource/languoid/id/smal1236">smal1236</a>)</div>`)[0];
+            popup_12cb65dccb044c66a3711f273a5b4391.setContent(html_6dc93fafeed343368f95a3070ac557d7);
+        
+
+        circle_marker_15886becf01f4ac0828e185dabbd2483.bindPopup(popup_12cb65dccb044c66a3711f273a5b4391)
+        ;
+
+        
+    
+    
+            var circle_marker_7a92ca237e6e4719a2c78bde0556cf5e = L.circleMarker(
+                [26.7238, 106.682],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_b1ebc93581ed4923bbcaa68ea905d177 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62ee7902ab6b4dcdb9433b23fceec5f7 = $(`<div id="html_62ee7902ab6b4dcdb9433b23fceec5f7" style="width: 100.0%; height: 100.0%;">Northern Guiyang Hmong (<a href="https://glottolog.org/resource/languoid/id/nort1545">nort1545</a>)</div>`)[0];
+            popup_b1ebc93581ed4923bbcaa68ea905d177.setContent(html_62ee7902ab6b4dcdb9433b23fceec5f7);
+        
+
+        circle_marker_7a92ca237e6e4719a2c78bde0556cf5e.bindPopup(popup_b1ebc93581ed4923bbcaa68ea905d177)
+        ;
+
+        
+    
+    
+            var circle_marker_79f0dfbeb5854485be21c4fbe1b569d2 = L.circleMarker(
+                [26.1803, 106.003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_3aa9c0bf560947ff989081eeb3184c80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43ea95270711499788994d5a809aec0e = $(`<div id="html_43ea95270711499788994d5a809aec0e" style="width: 100.0%; height: 100.0%;">Southwestern Guiyang Hmong (<a href="https://glottolog.org/resource/languoid/id/sout2756">sout2756</a>)</div>`)[0];
+            popup_3aa9c0bf560947ff989081eeb3184c80.setContent(html_43ea95270711499788994d5a809aec0e);
+        
+
+        circle_marker_79f0dfbeb5854485be21c4fbe1b569d2.bindPopup(popup_3aa9c0bf560947ff989081eeb3184c80)
+        ;
+
+        
+    
+    
+            var circle_marker_93f5c761cd1244adb387c9fd74e46dca = L.circleMarker(
+                [26.3902, 106.481],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_d9beacfba5964e799eb6fc4cbe314f42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7abc1a012fed4c9ba4e57a8541fd384e = $(`<div id="html_7abc1a012fed4c9ba4e57a8541fd384e" style="width: 100.0%; height: 100.0%;">Southern Guiyang Hmong (<a href="https://glottolog.org/resource/languoid/id/sout1555">sout1555</a>)</div>`)[0];
+            popup_d9beacfba5964e799eb6fc4cbe314f42.setContent(html_7abc1a012fed4c9ba4e57a8541fd384e);
+        
+
+        circle_marker_93f5c761cd1244adb387c9fd74e46dca.bindPopup(popup_d9beacfba5964e799eb6fc4cbe314f42)
+        ;
+
+        
+    
+    
+            var circle_marker_cf9cd3b3fa3c4d46b32ae82136eff0d5 = L.circleMarker(
+                [25.7723, 106.53],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_83c3890cc6ef45fcb350d71844c9ac39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c0015770ac04ee499ae0a1c3388401f = $(`<div id="html_3c0015770ac04ee499ae0a1c3388401f" style="width: 100.0%; height: 100.0%;">Northern Mashan Hmong (<a href="https://glottolog.org/resource/languoid/id/nort1546">nort1546</a>)</div>`)[0];
+            popup_83c3890cc6ef45fcb350d71844c9ac39.setContent(html_3c0015770ac04ee499ae0a1c3388401f);
+        
+
+        circle_marker_cf9cd3b3fa3c4d46b32ae82136eff0d5.bindPopup(popup_83c3890cc6ef45fcb350d71844c9ac39)
+        ;
+
+        
+    
+    
+            var circle_marker_a1a0b96e37a946a48bc8bb5a30de48a2 = L.circleMarker(
+                [25.3359, 106.308],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_c3012bcad709415f9edf86e48bc98f37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a2fa75b99184b12b592bd4b3966abcf = $(`<div id="html_4a2fa75b99184b12b592bd4b3966abcf" style="width: 100.0%; height: 100.0%;">Southern Mashan Hmong (<a href="https://glottolog.org/resource/languoid/id/sout1556">sout1556</a>)</div>`)[0];
+            popup_c3012bcad709415f9edf86e48bc98f37.setContent(html_4a2fa75b99184b12b592bd4b3966abcf);
+        
+
+        circle_marker_a1a0b96e37a946a48bc8bb5a30de48a2.bindPopup(popup_c3012bcad709415f9edf86e48bc98f37)
+        ;
+
+        
+    
+    
+            var circle_marker_460894903cbf400aa163aef3da3548ce = L.circleMarker(
+                [25.60046, 106.39604],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_184b434630864cfda6da91f8150ed70b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1fe9ce29e9340369dd142516e26bcf5 = $(`<div id="html_d1fe9ce29e9340369dd142516e26bcf5" style="width: 100.0%; height: 100.0%;">Central Mashan Hmong (<a href="https://glottolog.org/resource/languoid/id/cent1394">cent1394</a>)</div>`)[0];
+            popup_184b434630864cfda6da91f8150ed70b.setContent(html_d1fe9ce29e9340369dd142516e26bcf5);
+        
+
+        circle_marker_460894903cbf400aa163aef3da3548ce.bindPopup(popup_184b434630864cfda6da91f8150ed70b)
+        ;
+
+        
+    
+    
+            var circle_marker_6c50420155454a88b04fa1c810b759ee = L.circleMarker(
+                [25.6518, 106.122],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_24fcdac611c04f3cacefa08432503eec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1107e5efccf4c48bb22eec703e3f49d = $(`<div id="html_f1107e5efccf4c48bb22eec703e3f49d" style="width: 100.0%; height: 100.0%;">Western Mashan Hmong (<a href="https://glottolog.org/resource/languoid/id/west1507">west1507</a>)</div>`)[0];
+            popup_24fcdac611c04f3cacefa08432503eec.setContent(html_f1107e5efccf4c48bb22eec703e3f49d);
+        
+
+        circle_marker_6c50420155454a88b04fa1c810b759ee.bindPopup(popup_24fcdac611c04f3cacefa08432503eec)
+        ;
+
+        
+    
+    
+            var circle_marker_75625f5d8bad4b23959f7f57ff224170 = L.circleMarker(
+                [26.0436, 106.561],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_624fc7a9e5f94532ac87f1d2e4a56ca0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f6e87c9a834417896939712fec77576 = $(`<div id="html_1f6e87c9a834417896939712fec77576" style="width: 100.0%; height: 100.0%;">Southwestern Huishui Hmong (<a href="https://glottolog.org/resource/languoid/id/sout2755">sout2755</a>)</div>`)[0];
+            popup_624fc7a9e5f94532ac87f1d2e4a56ca0.setContent(html_1f6e87c9a834417896939712fec77576);
+        
+
+        circle_marker_75625f5d8bad4b23959f7f57ff224170.bindPopup(popup_624fc7a9e5f94532ac87f1d2e4a56ca0)
+        ;
+
+        
+    
+    
+            var circle_marker_5dc27e1163cd431fb9fb8316032428a3 = L.circleMarker(
+                [26.3259, 107.102],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_df064d34099247d599a8aed19aa26425 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fc23b88a6b24aa0b5e74b23874827a7 = $(`<div id="html_0fc23b88a6b24aa0b5e74b23874827a7" style="width: 100.0%; height: 100.0%;">Northern Huishui Hmong (<a href="https://glottolog.org/resource/languoid/id/nort2749">nort2749</a>)</div>`)[0];
+            popup_df064d34099247d599a8aed19aa26425.setContent(html_0fc23b88a6b24aa0b5e74b23874827a7);
+        
+
+        circle_marker_5dc27e1163cd431fb9fb8316032428a3.bindPopup(popup_df064d34099247d599a8aed19aa26425)
+        ;
+
+        
+    
+    
+            var circle_marker_0d5aec5557e748819e9874c7455b7c6f = L.circleMarker(
+                [25.9942, 106.832],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_c60e72ea7dd946d09c9dca459b35e778 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f8619052d0444039717882a514efc7b = $(`<div id="html_6f8619052d0444039717882a514efc7b" style="width: 100.0%; height: 100.0%;">Eastern Huishui Hmong (<a href="https://glottolog.org/resource/languoid/id/east2372">east2372</a>)</div>`)[0];
+            popup_c60e72ea7dd946d09c9dca459b35e778.setContent(html_6f8619052d0444039717882a514efc7b);
+        
+
+        circle_marker_0d5aec5557e748819e9874c7455b7c6f.bindPopup(popup_c60e72ea7dd946d09c9dca459b35e778)
+        ;
+
+        
+    
+    
+            var circle_marker_8767c2b2e73e499faa805a75f9385196 = L.circleMarker(
+                [26.041, 106.719],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_755a6fd07ab140f1a031e7b511bc3ccc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22d6f8a245be4dc2af997afbeb21aec8 = $(`<div id="html_22d6f8a245be4dc2af997afbeb21aec8" style="width: 100.0%; height: 100.0%;">Central Huishui Hmong (<a href="https://glottolog.org/resource/languoid/id/cent2013">cent2013</a>)</div>`)[0];
+            popup_755a6fd07ab140f1a031e7b511bc3ccc.setContent(html_22d6f8a245be4dc2af997afbeb21aec8);
+        
+
+        circle_marker_8767c2b2e73e499faa805a75f9385196.bindPopup(popup_755a6fd07ab140f1a031e7b511bc3ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_edc54cd1b0ba45f3834f40ddc638358a = L.circleMarker(
+                [26.8, 104.9],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_76ffdfe8c46b45e7be15a14e137b7185 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2a233e75f8446fb84f08440e40669a5 = $(`<div id="html_c2a233e75f8446fb84f08440e40669a5" style="width: 100.0%; height: 100.0%;">Horned Miao (<a href="https://glottolog.org/resource/languoid/id/horn1235">horn1235</a>)</div>`)[0];
+            popup_76ffdfe8c46b45e7be15a14e137b7185.setContent(html_c2a233e75f8446fb84f08440e40669a5);
+        
+
+        circle_marker_edc54cd1b0ba45f3834f40ddc638358a.bindPopup(popup_76ffdfe8c46b45e7be15a14e137b7185)
+        ;
+
+        
+    
+    
+            var circle_marker_7f58e92d4ad4475a9e684534acf9bc08 = L.circleMarker(
+                [23.22649, 105.08171],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_585eaa616b79458890240b7cb99cd3b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99459b9919fd48719d2648b75ccef278 = $(`<div id="html_99459b9919fd48719d2648b75ccef278" style="width: 100.0%; height: 100.0%;">Sinicized Miao (<a href="https://glottolog.org/resource/languoid/id/hmon1331">hmon1331</a>)</div>`)[0];
+            popup_585eaa616b79458890240b7cb99cd3b7.setContent(html_99459b9919fd48719d2648b75ccef278);
+        
+
+        circle_marker_7f58e92d4ad4475a9e684534acf9bc08.bindPopup(popup_585eaa616b79458890240b7cb99cd3b7)
+        ;
+
+        
+    
+    
+            var circle_marker_3d641ad7fece494782b3ff8b0e1ca49c = L.circleMarker(
+                [21.5461, 103.164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_56951d3230644015b8132b7ad862d74b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_369ac709ab3e4c7284b2f1bb9ca22917 = $(`<div id="html_369ac709ab3e4c7284b2f1bb9ca22917" style="width: 100.0%; height: 100.0%;">Hmong Daw (<a href="https://glottolog.org/resource/languoid/id/hmon1333">hmon1333</a>)</div>`)[0];
+            popup_56951d3230644015b8132b7ad862d74b.setContent(html_369ac709ab3e4c7284b2f1bb9ca22917);
+        
+
+        circle_marker_3d641ad7fece494782b3ff8b0e1ca49c.bindPopup(popup_56951d3230644015b8132b7ad862d74b)
+        ;
+
+        
+    
+    
+            var circle_marker_d1f7510f65c04eb5bc77a8093c45f4bd = L.circleMarker(
+                [22.5638, 101.95],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_c00ba8ccdf664993897a74954d5b1f8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b74dcd3be4174deaaf0a6e2993879df0 = $(`<div id="html_b74dcd3be4174deaaf0a6e2993879df0" style="width: 100.0%; height: 100.0%;">Hmong Njua (<a href="https://glottolog.org/resource/languoid/id/hmon1264">hmon1264</a>)</div>`)[0];
+            popup_c00ba8ccdf664993897a74954d5b1f8d.setContent(html_b74dcd3be4174deaaf0a6e2993879df0);
+        
+
+        circle_marker_d1f7510f65c04eb5bc77a8093c45f4bd.bindPopup(popup_c00ba8ccdf664993897a74954d5b1f8d)
+        ;
+
+        
+    
+    
+            var circle_marker_22467b8295424a27bfc253632966ef4f = L.circleMarker(
+                [24.041944, 104.191944],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_57879a61a3ba4120bf26d537d223c4fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4b35e7f167048c88aa143308c518d6b = $(`<div id="html_c4b35e7f167048c88aa143308c518d6b" style="width: 100.0%; height: 100.0%;">Northern Hmong (<a href="https://glottolog.org/resource/languoid/id/nort3244">nort3244</a>)</div>`)[0];
+            popup_57879a61a3ba4120bf26d537d223c4fb.setContent(html_c4b35e7f167048c88aa143308c518d6b);
+        
+
+        circle_marker_22467b8295424a27bfc253632966ef4f.bindPopup(popup_57879a61a3ba4120bf26d537d223c4fb)
+        ;
+
+        
+    
+    
+            var circle_marker_95e1424e0dbf4f13a25781843099ff05 = L.circleMarker(
+                [22.7962, 104.182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_80de8db6ed6f4d688a4fcbd85c8fd27b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5049e336413f4f86a0d9bd81c304f87f = $(`<div id="html_5049e336413f4f86a0d9bd81c304f87f" style="width: 100.0%; height: 100.0%;">Hmong Dô (<a href="https://glottolog.org/resource/languoid/id/hmon1332">hmon1332</a>)</div>`)[0];
+            popup_80de8db6ed6f4d688a4fcbd85c8fd27b.setContent(html_5049e336413f4f86a0d9bd81c304f87f);
+        
+
+        circle_marker_95e1424e0dbf4f13a25781843099ff05.bindPopup(popup_80de8db6ed6f4d688a4fcbd85c8fd27b)
+        ;
+
+        
+    
+    
+            var circle_marker_2d6622c5fcb64402a8d6044a07524d92 = L.circleMarker(
+                [21.5211, 104.589],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_a6ee68a6daca4165ab786ac9ebbc507d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3d46480ab8142948ab01cb0ee22f785 = $(`<div id="html_f3d46480ab8142948ab01cb0ee22f785" style="width: 100.0%; height: 100.0%;">Hmong Don (<a href="https://glottolog.org/resource/languoid/id/hmon1263">hmon1263</a>)</div>`)[0];
+            popup_a6ee68a6daca4165ab786ac9ebbc507d.setContent(html_f3d46480ab8142948ab01cb0ee22f785);
+        
+
+        circle_marker_2d6622c5fcb64402a8d6044a07524d92.bindPopup(popup_a6ee68a6daca4165ab786ac9ebbc507d)
+        ;
+
+        
+    
+    
+            var circle_marker_7a80622fa53c4846b8b474120c64182d = L.circleMarker(
+                [25.5309, 111.344],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_0cc9aab0c39f4ae4be549009b8df3392 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08a3eb367ea449dfb3943b8cec68efc0 = $(`<div id="html_08a3eb367ea449dfb3943b8cec68efc0" style="width: 100.0%; height: 100.0%;">Biao-Jiao Mien (<a href="https://glottolog.org/resource/languoid/id/biao1254">biao1254</a>)</div>`)[0];
+            popup_0cc9aab0c39f4ae4be549009b8df3392.setContent(html_08a3eb367ea449dfb3943b8cec68efc0);
+        
+
+        circle_marker_7a80622fa53c4846b8b474120c64182d.bindPopup(popup_0cc9aab0c39f4ae4be549009b8df3392)
+        ;
+
+        
+    
+    
+            var circle_marker_d1ec7e59ba0c4c1fbbd10c5ed7b4bf53 = L.circleMarker(
+                [24.9754, 112.326],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_84ceeb6bca1547e49f754579f258a4a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1e2e840d4d24014863c595133e2f4cf = $(`<div id="html_e1e2e840d4d24014863c595133e2f4cf" style="width: 100.0%; height: 100.0%;">Dzao Min (<a href="https://glottolog.org/resource/languoid/id/dzao1238">dzao1238</a>)</div>`)[0];
+            popup_84ceeb6bca1547e49f754579f258a4a5.setContent(html_e1e2e840d4d24014863c595133e2f4cf);
+        
+
+        circle_marker_d1ec7e59ba0c4c1fbbd10c5ed7b4bf53.bindPopup(popup_84ceeb6bca1547e49f754579f258a4a5)
+        ;
+
+        
+    
+    
+            var circle_marker_56200592ec1141c09174592738c4c6b8 = L.circleMarker(
+                [22.9856, 105.024],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_cc1fa7a29c854934953789b3b7bd24ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7227566acac54b3988d35118d9b0a857 = $(`<div id="html_7227566acac54b3988d35118d9b0a857" style="width: 100.0%; height: 100.0%;">Kim Mun (<a href="https://glottolog.org/resource/languoid/id/kimm1245">kimm1245</a>)</div>`)[0];
+            popup_cc1fa7a29c854934953789b3b7bd24ed.setContent(html_7227566acac54b3988d35118d9b0a857);
+        
+
+        circle_marker_56200592ec1141c09174592738c4c6b8.bindPopup(popup_cc1fa7a29c854934953789b3b7bd24ed)
+        ;
+
+        
+    
+    
+            var circle_marker_5b69e41e9f014a9d98806fe7125cd58d = L.circleMarker(
+                [20.83, 101.17],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_e30648879bcf4b6ab91db0acca1010ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1506abd8bc64ebab60d4a97d0fa63ee = $(`<div id="html_f1506abd8bc64ebab60d4a97d0fa63ee" style="width: 100.0%; height: 100.0%;">Iu Mien (<a href="https://glottolog.org/resource/languoid/id/iumi1238">iumi1238</a>)</div>`)[0];
+            popup_e30648879bcf4b6ab91db0acca1010ad.setContent(html_f1506abd8bc64ebab60d4a97d0fa63ee);
+        
+
+        circle_marker_5b69e41e9f014a9d98806fe7125cd58d.bindPopup(popup_e30648879bcf4b6ab91db0acca1010ad)
+        ;
+
+        
+    
+    
+            var circle_marker_93df6c8e61ba4652a3dbfed91bc876aa = L.circleMarker(
+                [24.6451, 113.469],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9a64ceb2ff82478685a7db61ae05f137);
+        
+    
+        var popup_337081b8970f4ebb9ffed376bb447a42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4482428259f84d558edab2e3c9b6dd79 = $(`<div id="html_4482428259f84d558edab2e3c9b6dd79" style="width: 100.0%; height: 100.0%;">Biao Mon (<a href="https://glottolog.org/resource/languoid/id/biao1256">biao1256</a>)</div>`)[0];
+            popup_337081b8970f4ebb9ffed376bb447a42.setContent(html_4482428259f84d558edab2e3c9b6dd79);
+        
+
+        circle_marker_93df6c8e61ba4652a3dbfed91bc876aa.bindPopup(popup_337081b8970f4ebb9ffed376bb447a42)
+        ;
+
+        
+    
+</script>
