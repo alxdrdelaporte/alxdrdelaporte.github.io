@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<head>
+    <title>Démo : Carte langues japoniques (layer control)</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e1daa91dd314371a802e2f5c866d7dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2e1daa91dd314371a802e2f5c866d7dc" ></div>
+        
+</body>
+<script>    
+    
+            var map_2e1daa91dd314371a802e2f5c866d7dc = L.map(
+                "map_2e1daa91dd314371a802e2f5c866d7dc",
+                {
+                    center: [28.31, 129.982],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68bc37ecdf044f83bedac6fb9ede886a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+        
+    
+            var feature_group_2f934720c3ee4df984ddfbbadf963ca8 = L.featureGroup(
+                {}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+        
+    
+            var circle_marker_e1f19be586e84607b57a7cb7a3ffb2b0 = L.circleMarker(
+                [33.109444, 139.791389],
+                {"bubblingMouseEvents": true, "color": "#52BCA3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#52BCA3", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2f934720c3ee4df984ddfbbadf963ca8);
+        
+    
+        var popup_eb1ee58e5eac47caac967535a3d57271 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a77e7a22f6424143a12060b8bc3622a7 = $(`<div id="html_a77e7a22f6424143a12060b8bc3622a7" style="width: 100.0%; height: 100.0%;">Hachijo (<a href="https://glottolog.org/resource/languoid/id/hach1239">hach1239</a>)</div>`)[0];
+            popup_eb1ee58e5eac47caac967535a3d57271.setContent(html_a77e7a22f6424143a12060b8bc3622a7);
+        
+
+        circle_marker_e1f19be586e84607b57a7cb7a3ffb2b0.bindPopup(popup_eb1ee58e5eac47caac967535a3d57271)
+        ;
+
+        
+    
+    
+            var feature_group_a288350fb8114b4c8534db95b7e1641d = L.featureGroup(
+                {}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+        
+    
+            var circle_marker_57669db346604618a33d48399f532568 = L.circleMarker(
+                [34.683333, 135.8],
+                {"bubblingMouseEvents": true, "color": "#5D69B1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5D69B1", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a288350fb8114b4c8534db95b7e1641d);
+        
+    
+        var popup_56620a1d0c844020a5b7529ecf6758b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e26c2d7026b6409fabbf8614ab44c522 = $(`<div id="html_e26c2d7026b6409fabbf8614ab44c522" style="width: 100.0%; height: 100.0%;">Old Japanese (<a href="https://glottolog.org/resource/languoid/id/oldj1239">oldj1239</a>)</div>`)[0];
+            popup_56620a1d0c844020a5b7529ecf6758b8.setContent(html_e26c2d7026b6409fabbf8614ab44c522);
+        
+
+        circle_marker_57669db346604618a33d48399f532568.bindPopup(popup_56620a1d0c844020a5b7529ecf6758b8)
+        ;
+
+        
+    
+    
+            var circle_marker_240a613ef7764a23a7e6211933c9eb23 = L.circleMarker(
+                [35.0, 135.0],
+                {"bubblingMouseEvents": true, "color": "#5D69B1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5D69B1", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a288350fb8114b4c8534db95b7e1641d);
+        
+    
+        var popup_29c89f04c1ec41a5b4ed707e94230be1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9911f7d0e2434420b3b52f037e3163cf = $(`<div id="html_9911f7d0e2434420b3b52f037e3163cf" style="width: 100.0%; height: 100.0%;">Japanese (<a href="https://glottolog.org/resource/languoid/id/nucl1643">nucl1643</a>)</div>`)[0];
+            popup_29c89f04c1ec41a5b4ed707e94230be1.setContent(html_9911f7d0e2434420b3b52f037e3163cf);
+        
+
+        circle_marker_240a613ef7764a23a7e6211933c9eb23.bindPopup(popup_29c89f04c1ec41a5b4ed707e94230be1)
+        ;
+
+        
+    
+    
+            var circle_marker_0f0defee1fff40d383d7aebcf2cbf940 = L.circleMarker(
+                [24.381274, 121.574283],
+                {"bubblingMouseEvents": true, "color": "#5D69B1", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5D69B1", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_a288350fb8114b4c8534db95b7e1641d);
+        
+    
+        var popup_8a8601eeb30d4fb88d786e3490861b09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ece26645e58e4dfbb3bc71bf881519bd = $(`<div id="html_ece26645e58e4dfbb3bc71bf881519bd" style="width: 100.0%; height: 100.0%;">Yilan Creole Japanese (<a href="https://glottolog.org/resource/languoid/id/yila1234">yila1234</a>)</div>`)[0];
+            popup_8a8601eeb30d4fb88d786e3490861b09.setContent(html_ece26645e58e4dfbb3bc71bf881519bd);
+        
+
+        circle_marker_0f0defee1fff40d383d7aebcf2cbf940.bindPopup(popup_8a8601eeb30d4fb88d786e3490861b09)
+        ;
+
+        
+    
+    
+            var feature_group_15f45706fe1d47e8814c392745f57978 = L.featureGroup(
+                {}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+        
+    
+            var circle_marker_180e3566e3374fada8bd5620dc827dde = L.circleMarker(
+                [24.7564, 125.363],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_df05b54f28724190abedc8822667335e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2533a5ddd23490494b928ffd556671a = $(`<div id="html_e2533a5ddd23490494b928ffd556671a" style="width: 100.0%; height: 100.0%;">Miyako (<a href="https://glottolog.org/resource/languoid/id/miya1259">miya1259</a>)</div>`)[0];
+            popup_df05b54f28724190abedc8822667335e.setContent(html_e2533a5ddd23490494b928ffd556671a);
+        
+
+        circle_marker_180e3566e3374fada8bd5620dc827dde.bindPopup(popup_df05b54f28724190abedc8822667335e)
+        ;
+
+        
+    
+    
+            var circle_marker_4bdfcfa0970c41e5aa1c3960b2d34023 = L.circleMarker(
+                [24.3401, 123.801],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_8c1acfd7d63147dfa3ba583ff938a73f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8d7ec3c79fa4beaa1dc123e7debf7d0 = $(`<div id="html_b8d7ec3c79fa4beaa1dc123e7debf7d0" style="width: 100.0%; height: 100.0%;">Yaeyama (<a href="https://glottolog.org/resource/languoid/id/yaey1239">yaey1239</a>)</div>`)[0];
+            popup_8c1acfd7d63147dfa3ba583ff938a73f.setContent(html_b8d7ec3c79fa4beaa1dc123e7debf7d0);
+        
+
+        circle_marker_4bdfcfa0970c41e5aa1c3960b2d34023.bindPopup(popup_8c1acfd7d63147dfa3ba583ff938a73f)
+        ;
+
+        
+    
+    
+            var circle_marker_deaaaacd435b47629405dfe434440426 = L.circleMarker(
+                [24.45, 122.991],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_0fcba20485c1448291ce3548905d0a52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5576f5bc4d96462b91dd45dd77d5571a = $(`<div id="html_5576f5bc4d96462b91dd45dd77d5571a" style="width: 100.0%; height: 100.0%;">Yonaguni (<a href="https://glottolog.org/resource/languoid/id/yona1241">yona1241</a>)</div>`)[0];
+            popup_0fcba20485c1448291ce3548905d0a52.setContent(html_5576f5bc4d96462b91dd45dd77d5571a);
+        
+
+        circle_marker_deaaaacd435b47629405dfe434440426.bindPopup(popup_0fcba20485c1448291ce3548905d0a52)
+        ;
+
+        
+    
+    
+            var circle_marker_a67637cc9d2b48be8d1eb0cd130362d5 = L.circleMarker(
+                [28.31, 129.982],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_5f78c2283e4c46b0900cc3fdcd754b31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daae72beba044f27b4b85dfada2459f2 = $(`<div id="html_daae72beba044f27b4b85dfada2459f2" style="width: 100.0%; height: 100.0%;">Kikai (<a href="https://glottolog.org/resource/languoid/id/kika1239">kika1239</a>)</div>`)[0];
+            popup_5f78c2283e4c46b0900cc3fdcd754b31.setContent(html_daae72beba044f27b4b85dfada2459f2);
+        
+
+        circle_marker_a67637cc9d2b48be8d1eb0cd130362d5.bindPopup(popup_5f78c2283e4c46b0900cc3fdcd754b31)
+        ;
+
+        
+    
+    
+            var circle_marker_1d29d6f1e5ef4288ae4c881daff68ce2 = L.circleMarker(
+                [27.0407, 128.428],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_ccbf0b99abea4a8ca320177c1f092363 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f4c1301604a45d99674d20b01bd0992 = $(`<div id="html_7f4c1301604a45d99674d20b01bd0992" style="width: 100.0%; height: 100.0%;">Yoron (<a href="https://glottolog.org/resource/languoid/id/yoro1243">yoro1243</a>)</div>`)[0];
+            popup_ccbf0b99abea4a8ca320177c1f092363.setContent(html_7f4c1301604a45d99674d20b01bd0992);
+        
+
+        circle_marker_1d29d6f1e5ef4288ae4c881daff68ce2.bindPopup(popup_ccbf0b99abea4a8ca320177c1f092363)
+        ;
+
+        
+    
+    
+            var circle_marker_c59387d39a1e44a59ed757b644d8dea3 = L.circleMarker(
+                [26.5911, 128.068],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_411622949ba74aed83fde12100a89cee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0070338a5a9146f6a2000e73fe592882 = $(`<div id="html_0070338a5a9146f6a2000e73fe592882" style="width: 100.0%; height: 100.0%;">Kunigami (<a href="https://glottolog.org/resource/languoid/id/kuni1268">kuni1268</a>)</div>`)[0];
+            popup_411622949ba74aed83fde12100a89cee.setContent(html_0070338a5a9146f6a2000e73fe592882);
+        
+
+        circle_marker_c59387d39a1e44a59ed757b644d8dea3.bindPopup(popup_411622949ba74aed83fde12100a89cee)
+        ;
+
+        
+    
+    
+            var circle_marker_a591090cf06546ceb3c8367fcc85bf93 = L.circleMarker(
+                [26.14854, 127.7816],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_bc39effae8c14f14949749247b494802 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0aada1a6ceac4147b37d07b2abcd31c0 = $(`<div id="html_0aada1a6ceac4147b37d07b2abcd31c0" style="width: 100.0%; height: 100.0%;">Central Okinawan (<a href="https://glottolog.org/resource/languoid/id/cent2126">cent2126</a>)</div>`)[0];
+            popup_bc39effae8c14f14949749247b494802.setContent(html_0aada1a6ceac4147b37d07b2abcd31c0);
+        
+
+        circle_marker_a591090cf06546ceb3c8367fcc85bf93.bindPopup(popup_bc39effae8c14f14949749247b494802)
+        ;
+
+        
+    
+    
+            var circle_marker_9d9f1475854c414f89582b45c234879d = L.circleMarker(
+                [24.831088, 125.18956],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_6b4c0a195f83480f941e4516135fc1a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9042f92765d242b28d3ba3cfa99d5aa1 = $(`<div id="html_9042f92765d242b28d3ba3cfa99d5aa1" style="width: 100.0%; height: 100.0%;">Irabu-Jima (<a href="https://glottolog.org/resource/languoid/id/irab1238">irab1238</a>)</div>`)[0];
+            popup_6b4c0a195f83480f941e4516135fc1a6.setContent(html_9042f92765d242b28d3ba3cfa99d5aa1);
+        
+
+        circle_marker_9d9f1475854c414f89582b45c234879d.bindPopup(popup_6b4c0a195f83480f941e4516135fc1a6)
+        ;
+
+        
+    
+    
+            var circle_marker_0c640b15dcb04adca122629e1b34f02b = L.circleMarker(
+                [24.915887, 125.307663],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_02030ce4b3e14f56b0255fa1861da473 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c60c9fdbcfa40358503706f3bd64282 = $(`<div id="html_8c60c9fdbcfa40358503706f3bd64282" style="width: 100.0%; height: 100.0%;">Ogami (<a href="https://glottolog.org/resource/languoid/id/ogam1239">ogam1239</a>)</div>`)[0];
+            popup_02030ce4b3e14f56b0255fa1861da473.setContent(html_8c60c9fdbcfa40358503706f3bd64282);
+        
+
+        circle_marker_0c640b15dcb04adca122629e1b34f02b.bindPopup(popup_02030ce4b3e14f56b0255fa1861da473)
+        ;
+
+        
+    
+    
+            var circle_marker_61ee7c1d2dae49f6bedb3f269e076105 = L.circleMarker(
+                [28.1955, 129.285],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_42f543fd5c594caca40199b680eb102a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84b3e709117e4bd9b7b240e9cc5a5850 = $(`<div id="html_84b3e709117e4bd9b7b240e9cc5a5850" style="width: 100.0%; height: 100.0%;">Southern Amami-Oshima (<a href="https://glottolog.org/resource/languoid/id/sout2954">sout2954</a>)</div>`)[0];
+            popup_42f543fd5c594caca40199b680eb102a.setContent(html_84b3e709117e4bd9b7b240e9cc5a5850);
+        
+
+        circle_marker_61ee7c1d2dae49f6bedb3f269e076105.bindPopup(popup_42f543fd5c594caca40199b680eb102a)
+        ;
+
+        
+    
+    
+            var circle_marker_0dda1ae520cf4f86af88cdff517cb3dc = L.circleMarker(
+                [28.2099, 129.453],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_cf5735528af54c71b4884caf17cfbf34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cf360a8a0b54d23b2a938208585803f = $(`<div id="html_7cf360a8a0b54d23b2a938208585803f" style="width: 100.0%; height: 100.0%;">Northern Amami-Oshima (<a href="https://glottolog.org/resource/languoid/id/nort2935">nort2935</a>)</div>`)[0];
+            popup_cf5735528af54c71b4884caf17cfbf34.setContent(html_7cf360a8a0b54d23b2a938208585803f);
+        
+
+        circle_marker_0dda1ae520cf4f86af88cdff517cb3dc.bindPopup(popup_cf5735528af54c71b4884caf17cfbf34)
+        ;
+
+        
+    
+    
+            var circle_marker_8dc2458b64e14b03b4b755be981af217 = L.circleMarker(
+                [27.7736, 128.961],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_cd89002abca24ed79d6d900b8501bbb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f716b63e3cb5462eb3326d9edce80bfb = $(`<div id="html_f716b63e3cb5462eb3326d9edce80bfb" style="width: 100.0%; height: 100.0%;">Toku-No-Shima (<a href="https://glottolog.org/resource/languoid/id/toku1246">toku1246</a>)</div>`)[0];
+            popup_cd89002abca24ed79d6d900b8501bbb3.setContent(html_f716b63e3cb5462eb3326d9edce80bfb);
+        
+
+        circle_marker_8dc2458b64e14b03b4b755be981af217.bindPopup(popup_cd89002abca24ed79d6d900b8501bbb3)
+        ;
+
+        
+    
+    
+            var circle_marker_15de14cc78824b4ebd74056a62f95a82 = L.circleMarker(
+                [27.3738, 128.619],
+                {"bubblingMouseEvents": true, "color": "#E58606", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E58606", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_15f45706fe1d47e8814c392745f57978);
+        
+    
+        var popup_7e130d15f7834cda9a3894ab5682c387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a05f20af29814df7a05cdf1be291d6da = $(`<div id="html_a05f20af29814df7a05cdf1be291d6da" style="width: 100.0%; height: 100.0%;">Oki-No-Erabu (<a href="https://glottolog.org/resource/languoid/id/okin1246">okin1246</a>)</div>`)[0];
+            popup_7e130d15f7834cda9a3894ab5682c387.setContent(html_a05f20af29814df7a05cdf1be291d6da);
+        
+
+        circle_marker_15de14cc78824b4ebd74056a62f95a82.bindPopup(popup_7e130d15f7834cda9a3894ab5682c387)
+        ;
+
+        
+    
+    
+            var tile_layer_f79cd1b34e724137bbd3ba4e8c525ddb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+        
+    
+            var tile_layer_d52713a9997a40058b0b302ecc5d53e8 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+        
+    
+            var tile_layer_fed41e80c4cb499482a5e486f10b1912 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+        
+    
+            var layer_control_b7ac040aae06430fabe3bb85e27cac82 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_68bc37ecdf044f83bedac6fb9ede886a,
+                    "openstreetmap" : tile_layer_f79cd1b34e724137bbd3ba4e8c525ddb,
+                    "stamentoner" : tile_layer_d52713a9997a40058b0b302ecc5d53e8,
+                    "stamenwatercolor" : tile_layer_fed41e80c4cb499482a5e486f10b1912,
+                },
+                overlays :  {
+                    "Hachijo" : feature_group_2f934720c3ee4df984ddfbbadf963ca8,
+                    "Japanesic" : feature_group_a288350fb8114b4c8534db95b7e1641d,
+                    "Ryukyuan" : feature_group_15f45706fe1d47e8814c392745f57978,
+                },
+            };
+            L.control.layers(
+                layer_control_b7ac040aae06430fabe3bb85e27cac82.base_layers,
+                layer_control_b7ac040aae06430fabe3bb85e27cac82.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "bottomright"}
+            ).addTo(map_2e1daa91dd314371a802e2f5c866d7dc);
+            tile_layer_f79cd1b34e724137bbd3ba4e8c525ddb.remove();
+            tile_layer_d52713a9997a40058b0b302ecc5d53e8.remove();
+            tile_layer_fed41e80c4cb499482a5e486f10b1912.remove();
+            tile_layer_68bc37ecdf044f83bedac6fb9ede886a.remove();
+        
+</script>
