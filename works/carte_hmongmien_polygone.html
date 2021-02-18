@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <title>Démo : Carte langues hmong-mien (polygone)</title>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a72b8ed978a42b8865c3220c54a23db {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7a72b8ed978a42b8865c3220c54a23db" ></div>
+        
+</body>
+<script>    
+    
+            var map_7a72b8ed978a42b8865c3220c54a23db = L.map(
+                "map_7a72b8ed978a42b8865c3220c54a23db",
+                {
+                    center: [25.6618, 108.533],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac64b6fb6e7a406e97b6dcb93f75217f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7a72b8ed978a42b8865c3220c54a23db);
+        
+    
+        function geo_json_b3ea8ebf67f04e71a8a3e857c392dbde_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "fillColor": "blue", "fillOpacity": 0.4, "weight": 1};
+            }
+        }
+        function geo_json_b3ea8ebf67f04e71a8a3e857c392dbde_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_7a72b8ed978a42b8865c3220c54a23db.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_b3ea8ebf67f04e71a8a3e857c392dbde = L.geoJson(null, {
+                onEachFeature: geo_json_b3ea8ebf67f04e71a8a3e857c392dbde_onEachFeature,
+            
+                style: geo_json_b3ea8ebf67f04e71a8a3e857c392dbde_styler,
+        }).addTo(map_7a72b8ed978a42b8865c3220c54a23db);
+
+        function geo_json_b3ea8ebf67f04e71a8a3e857c392dbde_add (data) {
+            geo_json_b3ea8ebf67f04e71a8a3e857c392dbde.addData(data);
+        }
+            geo_json_b3ea8ebf67f04e71a8a3e857c392dbde_add({"features": [{"geometry": {"coordinates": [[[101.17, 20.83], [104.06, 27.8682], [109.756, 28.7318], [110.473, 27.9649], [113.469, 24.6451], [114.814, 23.0399], [101.17, 20.83]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+        
+    
+            geo_json_b3ea8ebf67f04e71a8a3e857c392dbde.bindTooltip(
+                `<div>
+                     Langues hmong-mien
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_08cafd5fbad145b1a62d7c3ce1bb3fab = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ac64b6fb6e7a406e97b6dcb93f75217f,
+                },
+                overlays :  {
+                    "Hmong-Mien (surface)" : geo_json_b3ea8ebf67f04e71a8a3e857c392dbde,
+                },
+            };
+            L.control.layers(
+                layer_control_08cafd5fbad145b1a62d7c3ce1bb3fab.base_layers,
+                layer_control_08cafd5fbad145b1a62d7c3ce1bb3fab.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_7a72b8ed978a42b8865c3220c54a23db);
+        
+</script>
