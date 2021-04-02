@@ -13,10 +13,18 @@ var keyHandler = function(event){
 		var stylecheck = mystyle.href.endsWith("alxdr1.css");
 		var congrats = document.getElementById("konamicongrats");
 		if (stylecheck == true) {
-			mystyle.setAttribute("href", "./style/alxdr2.css");
+			if (document.getElementById("indexmain")) {
+				mystyle.setAttribute("href", "./style/alxdr2.css");
+			} else {
+				mystyle.setAttribute("href", "../style/alxdr2.css");
+			}
 			congrats.setAttribute("style", "display: block");
 		} else {
-			mystyle.setAttribute("href", "./style/alxdr1.css");
+			if (document.getElementById("indexmain")) {
+				mystyle.setAttribute("href", "./style/alxdr1.css");
+			} else {
+				mystyle.setAttribute("href", "../style/alxdr1.css");
+			}
 			congrats.setAttribute("style", "display: none");
 		}
 	}
