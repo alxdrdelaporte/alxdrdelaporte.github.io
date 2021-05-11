@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+
+    <title>Distinctions Monter Hunter Rise</title>
+  </head>
+
+  <body class="h-100">
+
+    <!-- Intro -->
+    <div class="container-fluid d-flex flex-column justify-content-center h-100">
+      <div class="row">
+        <div class="col">
+          <h1>Distinctions Monter Hunter Rise</h1>
+          <p class="mt-3"><strong>Tableaux récapitulatifs des distinctions de la Carte de Guilde de Monster Hunter Rise.</strong><br> Beaucoup d'informations sont issues de <a href="https://gamewith.jp/mhrize/article/show/267173">cette page</a> ou ont été vérifiées dessus. Les traductions françaises ont été vérifiées de mes propres yeux sur ma Switch et/ou sur <a href="http://fr.mogapedia.wikia.com/wiki/Monster_Hunter_Wiki">Mogapedia</a>. Il y a probablement quelques coquilles/fautes de frappe.</p>
+          <p class="mt-3">Si vous constatez une erreur, n'hésitez pas à <a href="https://twitter.com/DracoFLE">me contacter</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Liste des distinctions -->
+    <div id="liste_distinctions" class="container-fluid d-flex flex-column justify-content-center h-100 mt-3">
+      <div class="row">
+        <div class="col">
+          <h2>Liste des distinctions</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table id="tab_distinctions" class="display" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Distinction</th>
+                <th>Condition(s) d'obtention</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="amulette_kamura" name="amulette_kamura">
+                      <label class="custom-control-label" for="amulette_kamura">Amulette de Kamura</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer la Quête Urgente <i>Retour aux bases</i></td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="lame_ancestrale" name="lame_ancestrale">
+                      <label class="custom-control-label" for="lame_ancestrale">Lame ancestrale</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer la Quête Village&nbsp;★★★★★ <i>Le châtiment</i></td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="epee_courte_sup" name="epee_courte_sup">
+                      <label class="custom-control-label" for="epee_courte_sup">Épée courte supérieure</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer la Quête Urgente <i>La Calamité approche</i></td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="parchemin_tempete_triomphale" name="parchemin_tempete_triomphale">
+                      <label class="custom-control-label" for="parchemin_tempete_triomphale">Parchemin Tempête triomphale</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Vaincre l'Ibushi du vent</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="parchemin_dompteur_calamite" name="parchemin_dompteur_calamite">
+                      <label class="custom-control-label" for="parchemin_dompteur_calamite">Parchemin Dompteur de la Calamité</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Vaincre l'Ibushi du vent et la Narwa du tonnerre</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="certificat_novice" name="certificat_novice">
+                      <label class="custom-control-label" for="certificat_novice">Certificat de novice</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer toutes les quêtes Village Novice et toutes les quêtes Novice du Grand Camp</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="certificat_calamite" name="certificat_calamite">
+                      <label class="custom-control-label" for="certificat_calamite">Certificat ennemi de la Calamité</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer 50 quêtes Calamité</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="collier_en_acaciame" name="collier_en_acaciame">
+                      <label class="custom-control-label" for="collier_en_acaciame">Collier en Acaciâme</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer 50 quêtes au Temple oublié</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="boucle_oreille_calampar" name="boucle_oreille_calampar">
+                      <label class="custom-control-label" for="boucle_oreille_calampar">Boucle d'oreille de Calampar gelée</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer 50 quêtes dans l'Archipel de glace</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="calice_prismatique" name="calice_prismatique">
+                      <label class="custom-control-label" for="calice_prismatique">Calice prismatique</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer 50 quêtes dans les Plaines de sable</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="anneau_cactus_argente" name="anneau_cactus_argente">
+                      <label class="custom-control-label" for="anneau_cactus_argente">Anneau Cactus argenté</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer 50 quêtes dans la Forêt inondée</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="bracelet_heliotrope" name="bracelet_heliotrope">
+                      <label class="custom-control-label" for="bracelet_heliotrope">Bracelet héliotrope</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer 50 quêtes dans les Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="couronne_honneur" name="couronne_honneur">
+                      <label class="custom-control-label" for="couronne_honneur">Couronne d'honneur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Accomplir 100 sous-quêtes facultatives</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="moulinet_kamura" name="moulinet_kamura">
+                      <label class="custom-control-label" for="moulinet_kamura">Moulinet Kamura</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Accomplir 1000 propulsions sur des Filoptères</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="selle_canyne_abimee" name="selle_canyne_abimee">
+                      <label class="custom-control-label" for="selle_canyne_abimee">Selle de Canyne abîmée</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Chevaucher un Canyne pendant 10 heures</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kit_construction_abime" name="kit_construction_abime">
+                      <label class="custom-control-label" for="kit_construction_abime">Kit de construction abîmé</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Construire tous les campements secondaires</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="assiette_grands_filopteres" name="assiette_grands_filopteres">
+                      <label class="custom-control-label" for="assiette_grands_filopteres">Assiette Grands Filoptères</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Placer un Grand Filoptère dans tous les Lys précieux</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="plaque_bidulons" name="plaque_bidulons">
+                      <label class="custom-control-label" for="plaque_bidulons">Plaque Bidulons</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Ramasser 500 bidulons</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="assiette_spectrinsecte_dore" name="assiette_spectrinsecte_dore">
+                      <label class="custom-control-label" for="assiette_spectrinsecte_dore">Assiette Spectrinsecte doré</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Obtenir un total de 1000 spectrinsectes d'or ou spectrinsectes dorés</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="marque_page_antique" name="marque_page_antique">
+                      <label class="custom-control-label" for="marque_page_antique">Marque-page antique</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Trouver tous les messages anciens</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="canne_a_peche_legendaire" name="canne_a_peche_legendaire">
+                      <label class="custom-control-label" for="canne_a_peche_legendaire">Canne à pêche légendaire</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Pêcher tous les types de poissons (<a href="#poissons">liste</a>)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="pro_bbq_a_point" name="pro_bbq_a_point">
+                      <label class="custom-control-label" for="pro_bbq_a_point">Pro du BBQ à point</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Cuire 30 Steaks à point</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="medaille_ecologiste_bronze" name="medaille_ecologiste_bronze">
+                      <label class="custom-control-label" for="medaille_ecologiste_bronze">Prix de l'écologiste bronze</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Prendre en photo tous les bidulons (<a href="#bidulons">liste</a>)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="medaille_ecologiste_argent" name="medaille_ecologiste_argent">
+                      <label class="custom-control-label" for="medaille_ecologiste_argent">Prix de l'écologiste argent</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Prendre en photo les 5 Merveilloux (<a href="#merveilloux">liste</a>)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="medaille_ecologiste_or" name="medaille_ecologiste_or">
+                      <label class="custom-control-label" for="medaille_ecologiste_or">Prix de l'écologiste or</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Prendre en photo tous les animaux de la faune locale</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="coffret_extravagant" name="coffret_extravagant">
+                      <label class="custom-control-label" for="coffret_extravagant">Coffret extravagant</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Obtenir un million de zenny</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="coffret_use" name="coffret_use">
+                      <label class="custom-control-label" for="coffret_use">Coffret usé</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Obtenir 100&nbsp;000 points Kamura</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="chalutations_distinguees" name="chalutations_distinguees">
+                      <label class="custom-control-label" for="chalutations_distinguees">Chalutations distinguées</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Recruter 50 Pilpoils</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="porte_bonheur" name="porte_bonheur">
+                      <label class="custom-control-label" for="porte_bonheur">Porte-bonheur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Envoyer les Miaourcenaires en mission 100 fois</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kit_customisation_chumsky" name="kit_customisation_chumsky">
+                      <label class="custom-control-label" for="kit_customisation_chumsky">Kit de customisation Chumsky</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Obtenir tous les équipements pour Chumsky</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="presentoir_armure_luxe" name="presentoir_armure_luxe">
+                      <label class="custom-control-label" for="presentoir_armure_luxe">Présentoir pour armure de luxe</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Forger 5 pièces d'équipement de Rareté 7</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="ceinture_noire" name="ceinture_noire">
+                      <label class="custom-control-label" for="ceinture_noire">Ceinture noire</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Débloquer tous les talents de substitution</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="ustensiles_du_chef" name="ustensiles_du_chef">
+                      <label class="custom-control-label" for="ustensiles_du_chef">Ustensiles du Chef</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Débloquer tous les dango-lapins du menu</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="commode_hibouette" name="commode_hibouette">
+                      <label class="custom-control-label" for="commode_hibouette">Commode pour Hibouette</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Obtenir toutes les tenues pour Hibouette</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="sandales_course" name="sandales_course">
+                      <label class="custom-control-label" for="sandales_course">Sandales de course</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Parler à tous les PNJ du village de Kamura (<a href="#personnages_kamura">liste</a>)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="plaque_fleau_mastodontes" name="plaque_fleau_mastodontes">
+                      <label class="custom-control-label" for="plaque_fleau_mastodontes">Plaque Fléau des Mastodontes</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Chasser 1000 grands monstres</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="plaque_pierre_cinq_coups" name="plaque_pierre_cinq_coups">
+                      <label class="custom-control-label" for="plaque_pierre_cinq_coups">Plaque D'une pierre cinq coups</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Chasser 5 grands monstres pendant une exploration</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="plaque_rodeo_bestial" name="plaque_rodeo_bestial">
+                      <label class="custom-control-label" for="plaque_rodeo_bestial">Plaque Rodéo bestial</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Effectuer 100 chevauchées Wyverne</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="eventail_ascension" name="eventail_ascension">
+                      <label class="custom-control-label" for="eventail_ascension">Éventail d'ascension</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer la Quête Village ★★★★★★★ <i>Avancé&nbsp;: Gala des vétérans</i></td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="certificat_arene" name="certificat_arene">
+                      <label class="custom-control-label" for="certificat_arene">Certificat de l'Arène</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Terminer toutes les quêtes Arène</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="chamicalement_les_palicos" name="chamicalement_les_palicos">
+                      <label class="custom-control-label" for="chamicalement_les_palicos">Chamicalement, les Palicos...</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Avoir un Palico de chaque classe au niveau 50</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="presentoir_armure_colore" name="presentoir_armure_colore">
+                      <label class="custom-control-label" for="presentoir_armure_colore">Présentoir pour armure coloré</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Forger 5 pièces d'armures spéciales</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="vase_florelets" name="vase_florelets">
+                      <label class="custom-control-label" for="vase_florelets">Vase pour Florelets</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Obtenir tous les Florelets</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personnages de Kamura -->
+    <div id="personnages_kamura" class="container-fluid d-flex flex-column justify-content-center h-100 mt-3">
+      <div class="row">
+        <div class="col">
+          <h2>Personnages de Kamura</h2>
+          <p>Liste des PNJ à qui parler pour obtenir la distinction <i>Sandales de course</i>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table id="tab_personnages" class="display" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Type</th>
+                <th>Localisation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="fukashigi" name="fukashigi">
+                      <label class="custom-control-label" for="fukashigi">Fukashigi l'informateur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Votre chambre (parler au mur de l'alcôve)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="chambellan" name="chambellan">
+                      <label class="custom-control-label" for="chambellan">Chambellan</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Votre chambre ou Bivouac Grand camp (en face du stand de forge)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="nakago" name="nakago">
+                      <label class="custom-control-label" for="nakago">Nakago le forgeron</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Bivouac Grand camp (stand de forge)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kojiri" name="kojiri">
+                      <label class="custom-control-label" for="kojiri">Kojiri le forgeron Pilpoil</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Bivouac Grand camp (stand de forge)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="zenchi" name="zenchi">
+                      <label class="custom-control-label" for="zenchi">Zenchi le docteur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Sur un toit entre l'entrée du village et l'aciérie ou près de Kagero le marchand</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="ikari" name="ikari">
+                      <label class="custom-control-label" for="ikari">Ikari le marin</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Devant un bâtiment derrière l'aciérie (face à Fugen l'ancien, suivre le chemin vers la gauche) ou chemin entre l'entrée du Grand camp et l'aciérie ou au stand de dango-lapins de Yomogi la chef</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="shiika" name="shiika">
+                      <label class="custom-control-label" for="shiika">Shiika la poétesse</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Sur un banc devant le stand de dango-lapins de Yomogi la chef</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="taishi" name="taishi">
+                      <label class="custom-control-label" for="taishi">Taishi l'apprenti chasseur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Sur un banc devant le stand de dango-lapins de Yomogi la chef</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hojo" name="hojo">
+                      <label class="custom-control-label" for="hojo">Hojo le Maître de Guilde</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Grand camp</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="otemai" name="otemai">
+                      <label class="custom-control-label" for="otemai">Otemai la chef</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Stand de dango-lapins du Grand camp</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="boumboum" name="boumboum">
+                      <label class="custom-control-label" for="boumboum">Boumboum le batteur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Grand Camp, avec Tararaboum le batteur (taiko en face de Hojo le Maître de la Guilde)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="tararaboum" name="tararaboum">
+                      <label class="custom-control-label" for="tararaboum">Tararaboum le batteur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Grand camp, avec Boumboum le batteur (taiko en face de Hojo le Maître de la Guilde)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="ayame" name="ayame">
+                      <label class="custom-control-label" for="ayame">Ayamé la chasseuse experte</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Grand camp (terrasse extérieure)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="utsushi" name="utsushi">
+                      <label class="custom-control-label" for="utsushi">Utsushi le maître</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Grand camp (terrasse extérieure)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hanamori" name="hanamori">
+                      <label class="custom-control-label" for="hanamori">Hanamori le guide</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Grand camp (près du stand de dango-lapins d'Otemai la chef)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="minoto" name="minoto">
+                      <label class="custom-control-label" for="minoto">Minoto la réceptionniste</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Comptoir des quêtes Grand camp</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="maido" name="maido">
+                      <label class="custom-control-label" for="maido">Maido la marchande</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Boutique Guilde du Grand camp</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="rondine" name="rondine">
+                      <label class="custom-control-label" for="rondine">Rondine la marchande</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Place Pilpoil, devant le bateau</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="iori" name="iori">
+                      <label class="custom-control-label" for="iori">Iori l'assistant Pilpoil</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Place Pilpoil</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="shirubei" name="shirubei">
+                      <label class="custom-control-label" for="shirubei">Shirubei l'expert Pilpoil</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Place Pilpoil</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kogarashi" name="kogarashi">
+                      <label class="custom-control-label" for="kogarashi">Kogarashi le chef Felyne</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Place Pilpoil</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="chino" name="chino">
+                      <label class="custom-control-label" for="chino">Chino la marchande</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Place Pilpoil, devant le bateau</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kotori" name="kotori">
+                      <label class="custom-control-label" for="kotori">Kotori la marchande</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Place Pilpoil, devant le bateau</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="sekirei" name="sekirei">
+                      <label class="custom-control-label" for="sekirei">Sekirei l'instructeur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Entrée de l'aire d'entraînement</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="inukai" name="inukai">
+                      <label class="custom-control-label" for="inukai">Inukai le maître-Canyne</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Devant un bâtiment entre l'entrée du village et l'aciérie, avec Goka le fidèle</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kagero" name="kagero">
+                      <label class="custom-control-label" for="kagero">Kagero le marchand</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Aciérie (devant son stand)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="seihaku" name="seihaku">
+                      <label class="custom-control-label" for="seihaku">Seihaku l'artiste onigiri</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Stands marchands en face de l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hanenaga" name="hanenaga">
+                      <label class="custom-control-label" for="hanenaga">Hanenaga le grand chasseur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Sur le chemin entre l'aciérie et la place Pilpoil ou devant le stand de Mihaba l'apprenti</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="mihaba" name="mihaba">
+                      <label class="custom-control-label" for="mihaba">Mihaba l'apprenti</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Aciérie (stand de forge)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hamon" name="hamon">
+                      <label class="custom-control-label" for="hamon">Hamon le forgeron</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Aciérie (stand de forge)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="fugen" name="fugen">
+                      <label class="custom-control-label" for="fugen">Fugen l'Ancien</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Devant l'aciérie, avec Homura le loyal</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="homura" name="homura">
+                      <label class="custom-control-label" for="homura">Homura le loyal</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Canyne</td>
+                <td>Devant l'aciérie, avec Fugen l'ancien</td>
+              </tr>
+              <tr>
+                <td>
+                   <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="yomogi" name="yomogi">
+                      <label class="custom-control-label" for="yomogi">Yomogi la chef</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Stand de dango-lapins entre l'aciérie et l'entrée du Grand camp</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="tsuriki" name="tsuriki">
+                      <label class="custom-control-label" for="tsuriki">Tsuriki le marin</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Sur le chemin qui passe devant l'entrée du Grand camp et l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hobashira" name="hobashira">
+                      <label class="custom-control-label" for="hobashira">Hobashira le marin</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Sur le quai (suivre le chemin après l'entrée du Grand camp)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="komitsu" name="komitsu">
+                      <label class="custom-control-label" for="komitsu">Komitsu la gourmande</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Stand de pommes d'amour, entre le stand de dango-lapins et l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="wakana" name="wakana">
+                      <label class="custom-control-label" for="wakana">Wakana la maraîchère</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Stands marchands en face de l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="suzukari" name="suzukari">
+                      <label class="custom-control-label" for="suzukari">Suzukari la marchande de riz</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Boutique de riz entre l'entrée du grand camp et l'aciérie, avec Senari le marchand de riz, ou stands marchands en face de l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hinoa" name="hinoa">
+                      <label class="custom-control-label" for="hinoa">Hinoa la quêtatrice</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Sur un banc en face de l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hinami" name="hinami">
+                      <label class="custom-control-label" for="hinami">Hinami la marchande parapluies</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Entrée du village (stand de parapluies)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="senari" name="senari">
+                      <label class="custom-control-label" for="senari">Senari le marchand de riz</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Être humain</td>
+                <td>Boutique de riz entre l'entrée du grand camp et l'aciérie, avec Suzukari la marchande de riz</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="goka" name="goka">
+                      <label class="custom-control-label" for="goka">Goka le fidèle</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Canyne</td>
+                <td>Devant un bâtiment entre l'entrée du village et l'aciérie, avec Inukai le maître-Canyne</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="senri" name="senri">
+                      <label class="custom-control-label" for="senri">Senri le postier</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Devant l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="shiratama" name="shiratama">
+                      <label class="custom-control-label" for="shiratama">Shiratama la marchande de thé</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Stand de dango-lapins de Yomogi la chef, avec Kinako la marchande de thé</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kinako" name="kinako">
+                      <label class="custom-control-label" for="kinako">Kinako la marchande de thé</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Stand de dango-lapins de Yomogi la chef, avec Shiratama la marchande de thé</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kajika" name="kajika">
+                      <label class="custom-control-label" for="kajika">Kajika le poissonnier</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Stands marchands devant l'aciérie</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="kisaki" name="kisaki">
+                      <label class="custom-control-label" for="kisaki">Kisaki le forgeron Pilpoil</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Felyne</td>
+                <td>Aciérie (stand de forge)</td>
+              </tr>   
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bidulons -->
+    <div id="bidulons" class="container-fluid d-flex flex-column justify-content-center h-100 mt-3">
+      <div class="row">
+        <div class="col">
+          <h2>Bidulons</h2>
+          <p>Liste des Bidulons à photographier pour obtenir la distinction <i>Prix de l'écologiste bronze</i>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table id="tab_bidulons" class="display" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Bidulon</th>
+                <th>Localisation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="somnicrapaud" name="somnicrapaud">
+                      <label class="custom-control-label" for="somnicrapaud">Somnicrapaud</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace, Plaines de sable, Forêt inondée</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="explocrapaud" name="explocrapaud">
+                      <label class="custom-control-label" for="explocrapaud">Explocrapaud</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Toutes les maps</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="poisoncrapaud" name="poisoncrapaud">
+                      <label class="custom-control-label" for="poisoncrapaud">Poisoncrapaud</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Archipel de glace, Plaines de sable</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="paralycrapaud" name="paralycrapaud">
+                      <label class="custom-control-label" for="paralycrapaud">Paralycrapaud</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Plaines de sable, Forêt inondée, Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="scaraboue" name="scaraboue">
+                      <label class="custom-control-label" for="scaraboue">Scaraboue</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Plaines de sable, Forêt inondée, Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="scaratonnerre" name="scaratonnerre">
+                      <label class="custom-control-label" for="scaratonnerre">Scaratonnerre</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Archipel de glace, Forêt inondée, Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="scaraneige" name="scaraneige">
+                      <label class="custom-control-label" for="scaraneige">Scaraneige</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="scarafeu" name="scarafeu">
+                      <label class="custom-control-label" for="scarafeu">Scarafeu</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Archipel de glace, Plaines de sable, cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="cendrelette" name="cendrelette">
+                      <label class="custom-control-label" for="cendrelette">Cendrelette</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Toutes les maps</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="escuregot" name="escuregot">
+                      <label class="custom-control-label" for="escuregot">Escuregot</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Archipel de glace, Plaines de sable, Forêt inondée</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="araignee_poupee" name="araignee_poupee">
+                      <label class="custom-control-label" for="araignee_poupee">Araignée-poupée</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Archipel de glace, Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="tortaube" name="tortaube">
+                      <label class="custom-control-label" for="tortaube">Tortaube</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Forêt inondée, Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="geminard" name="geminard">
+                      <label class="custom-control-label" for="geminard">Géminard</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="lanterninsecte" name="lanterninsecte">
+                      <label class="custom-control-label" for="lanterninsecte">Lanterninsecte</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace, Forêt inondée, Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="pieginsectes" name="pieginsectes">
+                      <label class="custom-control-label" for="pieginsectes">Pièginsectes</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Archipel de glace, Plaines de sable</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="antidobra" name="antidobra">
+                      <label class="custom-control-label" for="antidobra">Antidobra</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Forêt inondée, Cavernes de lave</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="lievure" name="lievure">
+                      <label class="custom-control-label" for="lievure">Lièvure</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié, Archipel de glace, Plaines de sable</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="crabe_roquette" name="crabe_roquette">
+                      <label class="custom-control-label" for="crabe_roquette">Crabe-roquette</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Plaines de sable, Cavernes de lave</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Merveilloux -->
+    <div id="merveilloux" class="container-fluid d-flex flex-column justify-content-center h-100 mt-3">
+      <div class="row">
+        <div class="col">
+          <h2>Merveilloux</h2>
+          <p>Liste complète des Merveilloux. Les photographier pour obtenir la distinction <i>Prix de l'écologiste argent</i>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table id="tab_merveilloux" class="display" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Merveillou</th>
+                <th>Localisation</th>
+                <th>Heure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="renard_neigeux" name="renard_neigeux">
+                      <label class="custom-control-label" for="renard_neigeux">Renard neigeux</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié&nbsp;: zone 5, perché sur un torii en haut de la montagne</td>
+                <td>Nuit</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="escargot_moine" name="escargot_moine">
+                      <label class="custom-control-label" for="escargot_moine">Escargot-moine</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace&nbsp;: zone 8, dans l'eau au large du navire échoué</td>
+                <td>Nuit</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="quetzalcobra" name="quetzalcobra">
+                      <label class="custom-control-label" for="quetzalcobra">Quetzalcobra</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Forêt inondée&nbsp;: zone 3, sur un autel dans la pyramide</td>
+                <td>Jour (vers le coucher du soleil)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="regitrice" name="regitrice">
+                      <label class="custom-control-label" for="regitrice">Régitrice</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Plaines de sable&nbsp;: zone 12, au fond des ruines ensevelies</td>
+                <td>Jour</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="bec_infernal" name="bec_infernal">
+                      <label class="custom-control-label" for="bec_infernal">Bec infernal</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Cavernes de lave&nbsp;: zone 11, dans le cratère du volcan</td>
+                <td>Nuit (vers le lever du soleil)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Poissons -->
+    <div id="poissons" class="container-fluid d-flex flex-column justify-content-center h-100 mt-3">
+      <div class="row">
+        <div class="col">
+          <h2>Poissons</h2>
+          <p>Liste complète des types de poissons. En pêcher au moins un de chaque pour obtenir la distinction <i>Canne à pêche légendaire</i>.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table id="tab_poissons" class="display" style="width: 100%">
+            <thead>
+              <tr>
+                <th>Poisson</th>
+                <th>Localisation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="poisson_rouge" name="poisson_rouge">
+                      <label class="custom-control-label" for="poisson_rouge">Poisson rouge</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Archipel de glace (zone 6)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="thon_glouton" name="thon_glouton">
+                      <label class="custom-control-label" for="thon_glouton">Thon glouton</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 13), Forêt inondée (zone 3)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="g_thon_glouton" name="g_thon_glouton">
+                      <label class="custom-control-label" for="g_thon_glouton">G.&nbsp;Thon glouton</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Plaines de sable (zone 8 HR)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="lancethon" name="lancethon">
+                      <label class="custom-control-label" for="lancethon">Lancethon</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace (zone 3 HR)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="poissaiguiseur" name="poissaiguiseur">
+                      <label class="custom-control-label" for="poissaiguiseur">Poissaiguiseur</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Archipel de glace (zones 6 et 11)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="g_poissaiguiseur" name="g_poissaiguiseur">
+                      <label class="custom-control-label" for="g_poissaiguiseur">G.&nbsp;Poissaiguiseur</label>
+                    </div>
+                  </form>
+                </td>  
+                <td>Temple oublié (zones 6 et 13), Archipel de glace (zones 3, 6 et 11), Forêt inondée (zones 3 et 5), Cavernes de lave (zone 1)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="sushipoisson" name="sushipoisson">
+                      <label class="custom-control-label" for="sushipoisson">Sushipoisson</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Archipel de glace (zones 6 et 11), Plaines de sable (zone 2), Forêt inondée (zones 3 et 5), Cavernes de lave (zone 1)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="poisson_grenade" name="poisson_grenade">
+                      <label class="custom-control-label" for="poisson_grenade">Poisson-grenade</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace (zone 6), Plaines de sable (zone 2), Forêt inondée (zone 3), Cavernes de lave (zone 1)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="poisson_dynamite" name="poisson_dynamite">
+                      <label class="custom-control-label" for="poisson_dynamite">Poisson-dynamite</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Archipel de glace (zones 6 et 11), Plaines de sable (zone 2), Forêt inondée (zones 3 et 5), Cavernes de lave (zone 1)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="combusthon" name="combusthon">
+                      <label class="custom-control-label" for="combusthon">Combusthon</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Archipel de Glace (zones 6 et 11)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="gros_combusthon" name="gros_combusthon">
+                      <label class="custom-control-label" for="gros_combusthon">Gros Combusthon</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Archipel de Glace (zone 6)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="piranhardent" name="piranhardent">
+                      <label class="custom-control-label" for="piranhardent">Piranhardent</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Plaines de sable (zone 2), Foret inondée (zones 3 et 5), Cavernes de lave (zone 1)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="g_piranhardent" name="g_piranhardent">
+                      <label class="custom-control-label" for="g_piranhardent">G.&nbsp;Piranhardent</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Plaines de sable (zone 2), Forêt inondée (zone 5), Cavernes de lave (zone 1)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="pourpraie" name="pourpraie">
+                      <label class="custom-control-label" for="pourpraie">Pourpraie</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Forêt inondée (zone 5)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="poisson_or" name="poisson_or">
+                      <label class="custom-control-label" for="poisson_or">Poisson d'or</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Temple oublié (zone 6), Plaines de sable (zone 2), Forêt inondée (zone 5)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="poisson_platine" name="poisson_platine">
+                      <label class="custom-control-label" for="poisson_platine">Poisson platine</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Forêt inondée (zone 5 HR)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="koi" name="koi">
+                      <label class="custom-control-label" for="koi">Koï</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace (zone 11), Cavernes de lave (zone 1)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="roi_koi" name="roi_koi">
+                      <label class="custom-control-label" for="roi_koi">Roi-koï</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Archipel de glace (zone 11), Cavernes de lave (zone 1)</td>
+              </tr>
+              <tr>
+                <td>
+                  <form>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="koi_supreme" name="koi_supreme">
+                      <label class="custom-control-label" for="koi_supreme">Koï suprème</label>
+                    </div>
+                  </form>
+                </td>
+                <td>Cavernes de lave (zone 1 HR)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer mt-5">
+      <div class="container-fluid d-flex flex-column justify-content-center h-100 mt-3">
+        <div class="row">
+          <div class="col">
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://alxdrdelaporte.github.io/works/distinctions_monster_hunter_rise.html">Distinctions Monster Hunter Rise</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://alxdrdelaporte.github.io/">Alexander Delaporte</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"></a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+          $('#tab_distinctions').DataTable();
+          $('#tab_personnages').DataTable();
+          $('#tab_bidulons').DataTable();
+          $('#tab_merveilloux').DataTable();
+          $('#tab_poissons').DataTable();
+      } );
+    </script>
+    <script src="../js/mhr_tables.js"></script>
+  </body>
+</html>
