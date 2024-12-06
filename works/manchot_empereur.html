@@ -41,7 +41,7 @@
                   </form>
                 </div>
                 <div id="button-container" class="hidden button-container">
-                  <button class="btn btn-secondary" id="testButton">Français</button>
+                  <button class="btn btn-secondary" id="testButton" data-text="Salut c'est le manchot">Français</button>
                   <button class="btn btn-secondary">English</button>
                   <button class="btn btn-secondary">Português</button>
                   <button class="btn btn-secondary">中文</button>
@@ -51,8 +51,6 @@
                   <button class="btn btn-secondary">ไทย</button>
                 </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -74,4 +72,12 @@
       alert("Prouvez que vous êtes vraiment fan des manchots empereurs !");
     }
   });
+
+  const buttons = document.querySelectorAll('#button-container button');
+      buttons.forEach(button => {
+        button.addEventListener('click', function() {
+          const buttonText = this.getAttribute('data-text');
+          alert(buttonText);
+        });
+      });
 </script>
