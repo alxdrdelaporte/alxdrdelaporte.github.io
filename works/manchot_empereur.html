@@ -85,7 +85,7 @@
       const data = langData[buttonLang];
 
       if (data) {
-        alert(`${data.titre}\n\n${data.texte}`);
+        alert(`${data.titre}\n\n${data.texte}\n\nSource : ${data.source}\n\nSous licence ${data.licence}`);
       } else {
         alert("Oups ! Pas de texte disponible pour cette langue.\nTentez un autre bouton.");
       }
