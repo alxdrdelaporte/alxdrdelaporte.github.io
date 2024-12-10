@@ -82,7 +82,7 @@
   buttons.forEach(button => {
     button.addEventListener('click', function() {
       const buttonLang = this.getAttribute('lang');
-      const data = buttonData[buttonLang];
+      const data = langData[buttonLang];
 
       if (data) {
         alert(`${data.titre}\n\n${data.texte}`);
