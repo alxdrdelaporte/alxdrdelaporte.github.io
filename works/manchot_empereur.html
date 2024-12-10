@@ -61,6 +61,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
+
   document.getElementById('submitBtn').addEventListener('click', function() {
     const textInput = document.getElementById('textInput').value.trim();
     const checkInput = document.getElementById('checkInput').checked;
@@ -73,6 +74,10 @@
     }
   });
 
+  const langData = {
+    "français": { titre: "Manchot empereur", texte: "Le Manchot empereur (Aptenodytes forsteri) est un oiseau endémique de l'Antarctique, et le plus grand et le plus lourd de tous les manchots. Le mâle et la femelle ont un plumage similaire et sont de même taille, atteignant jusqu'à 122 cm de hauteur pour une masse qui varie entre 20 et 40 kg. Le dos et la tête sont noirs et le ventre blanc, le haut de la poitrine jaune clair ; deux marques jaune vif au niveau des oreilles sont très visibles. Comme les autres manchots, il est incapable de voler. Ses ailes raides et aplaties et son corps profilé sont particulièrement adaptés à l'habitat marin.", source: "https://fr.wikipedia.org/wiki/Manchot_empereur", licence: "CC BY-SA 4.0"}
+  };
+
   const buttons = document.querySelectorAll('#button-container button');
       buttons.forEach(button => {
         button.addEventListener('click', function() {
@@ -80,4 +85,18 @@
           alert(buttonText);
         });
       });
+
+  const buttons = document.querySelectorAll('#button-container button');
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      const buttonLang = this.getAttribute('lang');
+      const data = buttonData[buttonLang];
+
+      if (data) {
+        alert(`${data.titre}\n\n${data.texte}`);
+      } else {
+        alert("Oups ! Pas de texte disponible pour cette langue.\nTentez un autre bouton.");
+      }
+    });
+  });
 </script>
