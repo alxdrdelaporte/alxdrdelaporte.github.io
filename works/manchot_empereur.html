@@ -79,14 +79,6 @@
   };
 
   const buttons = document.querySelectorAll('#button-container button');
-      buttons.forEach(button => {
-        button.addEventListener('click', function() {
-          const buttonText = this.getAttribute('data-text');
-          alert(buttonText);
-        });
-      });
-
-  const buttons = document.querySelectorAll('#button-container button');
   buttons.forEach(button => {
     button.addEventListener('click', function() {
       const buttonLang = this.getAttribute('lang');
